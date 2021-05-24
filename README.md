@@ -1,2 +1,2 @@
 # python_practice_questions
-list of questions I practiced to master basic python
+The list of questions I practiced multiple times to master the concepts of basic python
