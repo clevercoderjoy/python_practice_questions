@@ -1,4 +1,3 @@
-'''
 #Pattern 1:
 # A
 # B C
@@ -235,11 +234,33 @@ for row in range(1, 2 * n):
             elif (col_2 >= row):
                 value_to_print += 1
     print()
-'''
 
 #new line
 print()
 
+#     A
+#    B C
+#   D E F
+#  G H I J
+# K L M N O
+
 #limit
 n = int(input("Enter the number of rows: \n"))
-
+row = 1
+#converting char to ascii value
+char = ord('A')
+#for rows
+while row <= n:
+    #for spaces in columns
+    col = 1
+    while col <= (n - row):
+        print(" ", end = "")
+        col += 1
+    #for characters in columns
+    col = 1
+    while col <= row:
+        print(chr(char), end = " ")
+        char += 1
+        col += 1
+    print()
+    row += 1
