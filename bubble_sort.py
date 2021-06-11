@@ -8,7 +8,7 @@
 # The second loop will start from (i + 1) and go up to n rounds.
 # At every iteration we will swap the (i + 1)th element with the ith element if (i + 1)th element will be smaller than the ith element on comparison.
 # At every iteration compare and move the largest element at the end of the list.
-
+# sorting takes place from back to front
 
 def bubble_sort(arr, size):
     # first loop to traverse over the list
