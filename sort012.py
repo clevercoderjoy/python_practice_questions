@@ -40,14 +40,13 @@ def sort012(arr, size):
     zero = 0
     current_pointer = 0
     two = size - 1
-    while current_pointer < two:
+    while current_pointer <= two:
         if arr[current_pointer] == 0:
             arr[zero], arr[current_pointer] = arr[current_pointer], arr[zero]
             current_pointer += 1
             zero += 1
         elif arr[current_pointer] == 2:
             arr[current_pointer], arr[two] = arr[two], arr[current_pointer]
-            current_pointer += 1
             two -= 1
         else:
             current_pointer += 1
