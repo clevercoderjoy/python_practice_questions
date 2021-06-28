@@ -45,7 +45,7 @@
 
 def find_unique(arr, size):
     ans = 0
-    for element in range(len(arr)):
+    for element in range(size):
         ans = ans ^ arr[element]
     return ans
 
